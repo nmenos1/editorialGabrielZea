@@ -1,0 +1,301 @@
+/* ESTRUCTURA GENERAL */
+*{
+    box-sizing: border-box;
+}
+
+
+.fecha{
+    margin: 0;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:16pt;
+    font-weight: 600;
+}
+
+.numero{
+    margin: 0;
+    position:fixed;
+    top: 5%;
+    left: 5%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size:16pt;
+    font-weight: 600; 
+}
+
+.titulo-texto h1{
+    margin: auto;
+    width: 40%;
+    padding-top: 15%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 55pt;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.byline{
+    margin-left: 50%;
+    margin-right: 30%;
+    width: 20%;
+    padding: 1% 0% 3% 0%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16pt;
+    font-weight: 600;
+    display: block;    
+}
+
+.img-principal figure{
+    margin:0;
+}
+
+.img-principal figure img{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 5%;
+}
+
+.img-principal figure figcaption{
+    margin-left: 25%;
+}
+
+figcaption {
+    font-family: 'PT Serif', serif;
+    font-size: 10pt;
+}
+
+.cuerpo{
+    margin: auto;
+    Padding-top: 5%;
+    width: 50%;
+    color: black;
+    font-size: 16pt;
+    line-height: 1.55;
+    font-family: 'PT Serif', serif;
+}
+
+.estilo1::first-letter{
+    font-family: monospace;
+    font-size: 5em;
+    font-weight: 600;
+    float: left;
+    padding: .5%;
+    margin: 0;
+    line-height: 80px;
+}
+
+.cuerpo h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 18pt;
+}
+
+.cuerpo span{
+    vertical-align: super;
+    font-size: 10pt;
+}
+
+.cuerpo figure{
+    width:100%;
+    margin: 0;
+}
+
+.cuerpo figure img{
+    width: 100%;
+    margin: auto;
+}
+
+/*.cuerpo span a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Notas al pie*/
+.notas {
+    font-family: serif;
+    font-size: 12pt;
+}
+
+.notas span {
+    width: 20%;
+    min-height: 70px;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid;
+    box-sizing: content-box;
+    overflow: auto;
+    visibility: hidden;
+ }
+
+/*#np5 {
+    visibility: visible;
+}
+
+/*Bibliografía*/
+
+.bibliografia{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.h-biblio h4{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+.h-biblio img{
+    width: 2%
+}
+
+.referencias {
+    font-family: 'PT Serif', serif;
+    font-size: 12pt;
+}
+
+
+/*Bio*/
+.bio {
+    width: 50%;
+    color: black;
+    font-family: 'PT Serif', serif;
+    font-size: 12pt;
+    line-height: 1.2;
+    text-align: justify;
+    margin: 5% 5% 5% 15%;
+    
+ }
+    
+.bio h3{
+    width: 40%
+    margin: auto;
+    text-align: left;
+    font-family:  'Titillium Web', sans-serif;
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+
+/*emoji final*/
+
+.emoji img{
+    width: 5%;
+    display: block;
+    position: absolute;
+    right: 3%;
+    margin: 5% 15% 5% 5%;
+}
+
+/*media queries para el header en movil */
+@media screen and (max-width: 800px) {
+    
+    .fecha {
+        position: absolute;
+        top: 1%;
+        right: 2%;
+        font-family: 'Titillium Web', sans-serif;
+        font-size:12pt;
+        font-weight: 600; 
+    }
+    
+    .numero{
+        position: absolute;
+        top: 1%;
+        left: 2%;
+        font-family: 'Titillium Web', sans-serif;
+        font-size:12pt;
+        font-weight: 600;
+    }
+    .titulo-texto h1{
+        width: 70%;
+        padding-top: 30%;
+        font-size: 30pt;
+        font-weight: 600;
+    }
+
+    .byline{
+        margin-left: 50%;
+        margin-right: 10%;
+        width: 40%;
+        font-size: 14pt;
+        font-weight: 600;
+        display: block;
+        line-height: 1.2;
+    }
+    
+    .img-principal figure{
+        margin:0;
+    }
+    
+    .img-principal img{
+        width: 100%;    
+    }
+
+    .cuerpo{
+        margin: auto;
+        Padding-top: 5%;
+        width: 80%;
+        color: black;
+        font-size: 14pt;
+        line-height: 1.2;
+        font-family: 'PT Serif', serif;
+    }
+
+    .estilo1::first-letter{
+        font-size: 2.6em;
+        font-weight: 600;
+        float: left;
+        padding: .5%;
+        margin: 0;
+        line-height: 40px;
+    }
+    
+    .bibliografia{
+        width: 70%;
+        margin-left: 10%;
+    }
+
+    .h-biblio img{
+        width: 8%
+    }
+
+    .referencias {
+        font-family: 'PT Serif', serif;
+        font-size: 11pt;
+    }
+    
+    .bio {
+        width: 75%;
+        font-size: 11pt;
+    }
+    
+    
+    .emoji img{
+    width: 12%;
+    right: 0%;
+    margin: 5% 11% 5% 5%;
+    }
+
+    .notas span {
+		    width: 90%;
+		    min-height: 70px;
+		    position: fixed;
+		    bottom: 3%;
+		    right: 3%;
+		    text-align: left;
+		    padding: 10px;
+		    border: 1px solid;
+		    box-sizing: content-box;
+		    overflow: auto;
+		    visibility: hidden;
+		    color: #3d3d3d;
+		    background-color: #ffffff;
+		}
+
+}
